@@ -1,0 +1,54 @@
+body{
+    background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/139/153/original/1000103833.jpg?1723640131);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.weather-app {
+
+    background-color: rgba(255,255,255,0.8);
+    margin: 60px 60px;
+    text-align: center;
+    padding: 28px;
+    border-radius: 20px;
+
+}
+.search-input{
+    padding: 7.5px;
+    border-radius: 6px;
+    background-color: #f9f7fe;
+    border: rgba(39,33,66,0.4);
+    font-size: 16px;
+    width: 60%;
+
+
+}
+.search-button{
+     padding: 6px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(150, 145, 196);
+    border: rgba(39,33,66,0.4);
+    line-height: 1;
+}
+.current-city{
+    text-align: left;
+}
+.current-details{
+    text-align: left;
+}
+.current-temperature{
+    font-size: 32px;
+    font-weight: 800;
+    display: flex;
+    justify-content: end;
+
+}
+
+
+footer{
+    border-top: 1px solid #f9f7fe;
+    padding-top: 15px;
+    color: rgba(39,33,66,0.4);
+}
