@@ -2,8 +2,7 @@ body{
     background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/139/153/original/1000103833.jpg?1723640131);
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0;
-    padding:10px 0;
+ 
 }
 
 .weather-app {
@@ -16,7 +15,7 @@ background-size: cover;
 
     /* background-color: rgba(255,255,255,0.8); */
     margin: 60px 60px;
-    padding: 35px 45px;
+    padding: 35px 60px;
     border-radius: 20px;
     box-shadow: 0 30px 50px rgba(65,50,100,0.08);
 
@@ -26,6 +25,14 @@ header{
     padding-bottom: 15px;
     color: rgb(255, 255, 255);
     text-align: center;
+}
+footer{
+   color: rgba(17, 17, 17, 0.651);
+    font-size: 13px;
+    font-family: monospace;
+    padding: 15px;
+    text-align: center;
+    margin: 100px;
 }
 .search-input{
     padding: 7.5px;
@@ -49,6 +56,10 @@ header{
 main{
     padding: 30px 0;
 }
+a{
+    color: #000000;
+    font-weight: 800;
+}
 .current-weather-data{
     display: flex;
     justify-content: space-between;
@@ -70,14 +81,10 @@ main{
     color: white;
     font-size: 40px;
     font-family: Matemasie, sans-serif;
-    margin:0;
+  
+ } 
+ .current-temperature-unit{
+    font-size:25px;
  }
       
-footer{
-    border-top: 1px solid #f9f7fe;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 13px;
-    font-family: monospace;
-    margin-bottom: 20px;
-}
+
