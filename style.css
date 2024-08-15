@@ -2,6 +2,8 @@ body{
     background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/139/153/original/1000103833.jpg?1723640131);
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0;
+    padding:10px 0;
 }
 
 .weather-app {
@@ -14,8 +16,7 @@ background-size: cover;
 
     /* background-color: rgba(255,255,255,0.8); */
     margin: 60px 60px;
-   
-    padding: 28px;
+    padding: 35px 45px;
     border-radius: 20px;
     box-shadow: 0 30px 50px rgba(65,50,100,0.08);
 
@@ -54,22 +55,29 @@ main{
 
 }
 .city-info{
+    color: white;
 
 }
 .current-city{
-
-        font-family: Matemasie, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
+   font-family: Matemasie, sans-serif;
+   font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin-top:-15px;
+    font-size: 30px;
+ }
+ .current-temperature{
+    color: white;
+    font-size: 40px;
+    font-family: Matemasie, sans-serif;
+    margin:0;
+ }
       
-
-
 footer{
     border-top: 1px solid #f9f7fe;
-    padding-top: 15px;
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 13px;
     font-family: monospace;
+    margin-bottom: 20px;
 }
