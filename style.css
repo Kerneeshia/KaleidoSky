@@ -63,7 +63,7 @@ a{
 .current-weather-data{
     display: flex;
     justify-content: space-between;
-    max-width: 90%;
+   
     
 
 }
@@ -86,7 +86,10 @@ a{
     font-size: 40px;
     font-family: Matemasie, sans-serif;
     margin-right: 0;
+    margin-top: 20px;
     position: relative;
+    max-width: 90%;
+
   
  } 
  .current-temperature-icon{
