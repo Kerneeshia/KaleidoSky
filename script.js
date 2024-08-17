@@ -14,7 +14,7 @@ function updateWeather(response){
     descriptionElement.innerHTML=response.data.condition.description;
     humidityElement.innerHTML=`${response.data.temperature.humidity}%`;
     windSpeedElement.innerHTML=`${response.data.wind.speed}km/h`;
-    timeElement.innerHTML="Today 11:50";
+    timeElement.innerHTML= "";
     iconElement.innerHTML=`<img src="${response.data.condition.icon_url}" class="current-temperature-icon"/>`
     
 

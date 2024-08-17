@@ -69,7 +69,7 @@ a{
 }
 .city-info{
     color: white;
-    margin-left: -30px;
+     margin-left: -30px; 
 
 }
 .current-city{
@@ -77,34 +77,34 @@ a{
    font-weight: 400;
     font-style: normal;
     color: white;
-    margin-top:-15px;
-    font-size: 30px;
+     margin-top:-15px;
+    font-size: 30px; 
     
  }
  .temp-unit{
-margin: 10px 20px;
+    margin-left: 60px;
+    margin-top: -75px;
+    position: relative;
  }
 
  .current-temperature{
     color: white;
     font-size: 40px;
     font-family: Matemasie, sans-serif;
-    margin-right: 0;
-    /* margin-top: 14px;
-    position: relative;
-    max-width: 90%; */
+     margin-right: 0;
+   
 
   
  } 
  .current-temperature-icon{
     width: 60px;
-    /* margin: 10px 0; */
+     margin-right: 50px; 
  }
  .current-temperature-unit{
-    /* font-size:25px;
-    position: absolute;
-    top: 2.5px; */
-/* left: 100%; */
+     font-size:25px;
+     position: absolute;
+    top: 2.5px; 
+left: 100%; 
 }
  .current-date, strong{
     color:#94bcf8;
