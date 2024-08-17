@@ -14,14 +14,15 @@ function updateWeather(response){
     descriptionElement.innerHTML=response.data.condition.description;
     humidityElement.innerHTML=`${response.data.temperature.humidity}%`;
     windSpeedElement.innerHTML=`${response.data.wind.speed}km/h`;
-    timeElement.innerHTML=formatDate(date);
-    iconElement.innerHTML=`<img src="${response.data.condition.icon_url}" alt="" class="current-temperature-icon"/>`
-
+    timeElement.innerHTML="Today 11:50";
+    iconElement.innerHTML=`<img src="${response.data.condition.icon_url}" class="current-temperature-icon"/>`
+    
 
     temperatureElement.innerHTML=Math.round(temperature);
 }
 
 function formatDate(date){
+
 let minutes=date.getMinutes();
 let hours=date.getHours();
 let day=[Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday];
