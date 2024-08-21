@@ -28,6 +28,10 @@ let hours=date.getHours();
 let day=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 let today = day[date.getDay()];
 
+if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
 return `${today} ${hours}:${minutes}`;
 }
 
