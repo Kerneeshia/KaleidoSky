@@ -1,7 +1,10 @@
 body{
     background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/139/153/original/1000103833.jpg?1723640131);
     background-size: cover;
+    background-position: center;
+
     background-repeat: no-repeat;
+    height: 100vh;
  
 }
 
