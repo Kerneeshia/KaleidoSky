@@ -54,4 +54,4 @@ searchCity(searchInput.value);
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", citySearchSubmit);
 
-searchCity("Johannesburg");
+searchCity("Durban");
