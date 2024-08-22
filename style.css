@@ -97,8 +97,9 @@ a{
     color: white;
     font-family: Matemasie, sans-serif;
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
+    /* flex-wrap: wrap; */
+    margin-top: 40px;
+    position: relative;
    
  } 
  .current-temperature-icon{
@@ -113,7 +114,8 @@ a{
  }
  .current-temperature-unit{
      font-size:25px;
-     margin-top: 0px;
+     position: absolute;
+     top: 10px;
 }
  .current-date, strong{
     color:#94bcf8;
