@@ -17,6 +17,8 @@ function updateWeather(response){
     timeElement.innerHTML= formatDate(date);
     iconElement.innerHTML=`<img src="${response.data.condition.icon_url}" class="current-temperature-icon"/>`
      temperatureElement.innerHTML=Math.round(temperature);
+
+     getForecast(response.data.city);
 }
 
 function formatDate(date){
@@ -32,7 +34,12 @@ if (minutes < 10) {
 
 return `${today} ${hours}:${minutes}`;
 }
+function formatDate(timestamp){
+    let date = new Date(timestamp*1000);
+    let days =["Sun","Mon","Tue","Wed","Thur","Fri","Sat"];
 
+    return days[date.getDay()];
+}
 
 function searchCity(city){
 let apiKey ="a3460f11d3801ff9feb7c65d8btoaadb";
@@ -49,25 +56,34 @@ let searchInput=document.querySelector("#search-input");
 searchCity(searchInput.value);
 }
 
-function displayForecast(){
-    let days =["Tue","Wed","Thur","Fri","Sat"];
+function getForecast(){
+let apiKey="a3460f11d3801ff9feb7c65d8btoaadb";
+let apiUrl=`https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+
+axios.get(apiUrl).then(displayForecast);
+}
+
+
+function displayForecast(response){
     let forecastHtml="";
 
-    days.forEach(function (day) {
-    
-    forecastHtml= forecastHtml +  `
-        <div class="weather-forecast-day">
-            <div class="forecast-day">${day}</div>
-            <div class="forecast-icon">🌞</div> 
+    response.data.daily.forEach(function (day, index) {
+   if (index < 5) {
+           forecastHtml= forecastHtml +  `
+             <div class="weather-forecast-day">
+            <div class="forecast-day">${format(day.time)}</div>
+
+           <img src="${day.condition.icon_url}" class="forecast-icon"/>  
             <div class="forecast-temperatures">
             <div class="weather-forecast-temerature">
-            <strong>23º</strong> 
+            <strong>${Math.round(day.temperature.maximum})</strong> 
             </div>
-            <div class="weather-forecast-temperature">20º</div>
+            <div class="weather-forecast-temperature">${Math.round(day.temperature.minimum})</div>
           </div>
           </div>
           `;
-        });
+                }
+    });
         
     let forecastElement=document.querySelector("#forecast");
         forecastElement.innerHTML=forecastHtml;
@@ -78,7 +94,7 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", citySearchSubmit);
 
 searchCity("Durban");
-displayForecast();
+
 
 
 
