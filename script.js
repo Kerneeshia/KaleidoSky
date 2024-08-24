@@ -16,9 +16,7 @@ function updateWeather(response){
     windSpeedElement.innerHTML=`${response.data.wind.speed}km/h`;
     timeElement.innerHTML= formatDate(date);
     iconElement.innerHTML=`<img src="${response.data.condition.icon_url}" class="current-temperature-icon"/>`
-    
-
-    temperatureElement.innerHTML=Math.round(temperature);
+     temperatureElement.innerHTML=Math.round(temperature);
 }
 
 function formatDate(date){
@@ -63,10 +61,13 @@ function displayForecast(){
             <div class="forecast-icon">🌞</div> 
             <div class="forecast-temperatures">
             <div class="weather-forecast-temerature">
-            <strong>23º</strong> </div>
+            <strong>23º</strong> 
+            </div>
             <div class="weather-forecast-temperature">20º</div>
           </div>
-          `;});
+          </div>
+          `;
+        });
         
     let forecastElement=document.querySelector("#forecast");
         forecastElement.innerHTML=forecastHtml;
