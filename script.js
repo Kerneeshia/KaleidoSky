@@ -34,7 +34,7 @@ if (minutes < 10) {
 
 return `${today} ${hours}:${minutes}`;
 }
-function formatDate(timestamp){
+function formatDay(timestamp){
     let date = new Date(timestamp*1000);
     let days =["Sun","Mon","Tue","Wed","Thur","Fri","Sat"];
 
@@ -73,14 +73,14 @@ function displayForecast(response){
         forecastHtml +  
         `
        <div class="weather-forecast-day">
-        <div class="forecast-day">${formatDate(day.time)}</div>
+        <div class="forecast-day">${formatDay(day.time)}</div>
 
             <img src="${day.condition.icon_url}" class="forecast-icon"/>  
             <div class="forecast-temperatures">
               <div class="weather-forecast-temerature">
-               <strong>${Math.round(day.temperature.maximum)}</strong> 
+               <strong>${Math.round(day.temperature.maximum)}°</strong> 
             </div>
-            <div class="weather-forecast-temperature">${Math.round(day.temperature.minimum)}</div>
+            <div class="weather-forecast-temperature">${Math.round(day.temperature.minimum)}°</div>
           </div>
         </div>
           `;

@@ -92,7 +92,9 @@ a{
     font-size: 30px; 
     
  }
-
+.temperature-container{
+    display: flex;
+}
  .current-temperature{
     color: white;
     font-family: Matemasie, sans-serif;
@@ -126,6 +128,7 @@ a{
     font-family:  Matemasie, sans-serif;
     display: flex;
     justify-content: space-around;
+    margin-left: -10px;
 
 }      
 .forecast-day{
@@ -137,16 +140,18 @@ a{
 .forecast-icon{
      padding: 8PX; 
     font-size: 23px;
-    width: 100%;
+    width: 80%;
     display: block;
-    margin: 0 auto;
+    margin-left: -10px;
 }
 .forecast-temperatures{
-padding: 8px;
 font-family: 'Courier New', Courier, monospace;
+display: flex;
+justify-content: center;
 
 }
 .weather-forecast-temperature{
     display: block;
     text-align: center;
+    padding: 0 6px;
 }
