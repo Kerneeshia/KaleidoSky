@@ -130,13 +130,23 @@ a{
 }      
 .forecast-day{
     padding: 8px;
+    display: block;
+    margin: 0 auto;
 
 }
 .forecast-icon{
-    padding: 8PX;
-    font-size: 25px;;
+     padding: 8PX; 
+    font-size: 23px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 .forecast-temperatures{
 padding: 8px;
 font-family: 'Courier New', Courier, monospace;
+
+}
+.weather-forecast-temperature{
+    display: block;
+    text-align: center;
 }
