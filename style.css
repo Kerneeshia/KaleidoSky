@@ -13,7 +13,7 @@ body{
     padding: 35px;
     border-radius: 20px;
     box-shadow: 0 30px 50px rgba(65,50,100,0.08);
-    max-width: 60%;
+    width: min-content;
     display: block;
     margin: 0 auto;
     margin-top: 50px;
@@ -94,6 +94,7 @@ a{
  }
 .temperature-container{
     display: flex;
+    min-height: 0px;
 }
  .current-temperature{
     color: white;
@@ -129,6 +130,7 @@ a{
     display: flex;
     justify-content: space-around;
     margin-left: -10px;
+    min-height: 0px;
 
 }      
 .forecast-day{
